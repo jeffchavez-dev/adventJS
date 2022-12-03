@@ -9,11 +9,13 @@ function timer(){
     let time = 5;
     if (time > 0) {
         time--
-        setTimeout(() => {
-            console.log(time)
-        }, 1000)
-       
+        const timer1 = console.log(time--)
+        const myTimer = setInterval(timer1, 1000)
+    } else {
+        clearInterval(myTimer)
     }
+
+   
   
 }
 
