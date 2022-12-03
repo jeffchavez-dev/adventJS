@@ -7,10 +7,13 @@
 
 function timer(){
     let time = 5;
-    if (time < 0) {
-        time--
+    if (time > 0) {
+        setTimeout(() => {
+            console.log(time--)
+        }, 1000)
+       
     }
-    console.log(time)
+  
 }
 
 const startBtn = document.querySelector('.start')
