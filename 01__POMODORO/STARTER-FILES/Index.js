@@ -6,7 +6,7 @@
 
 
 function timer(){
-    let time = 5;
+    let time = - 1;
     if (time > 0) {
         function timer1(){
             console.log(time--)
