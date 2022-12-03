@@ -8,8 +8,9 @@
 function timer(){
     let time = 5;
     if (time > 0) {
+        time--
         setTimeout(() => {
-            console.log(time--)
+            console.log(time)
         }, 1000)
        
     }
