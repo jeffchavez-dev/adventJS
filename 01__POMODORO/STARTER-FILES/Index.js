@@ -8,12 +8,14 @@
 function timer(){
     let time = 5;
     if (time > 0) {
-        time--
-        const timer1 = console.log(time--)
+        function timer1(){
+            console.log(time--)
+        }
         const myTimer = setInterval(timer1, 1000)
-    } else {
-        clearInterval(myTimer)
+    } else if (time === 0 ) {
+        clearInterval(Timer)
     }
+    return time
 
    
   
