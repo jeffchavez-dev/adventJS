@@ -5,3 +5,6 @@
 // - Once the timer finishes, the ring should change from green to red and an alert message is passed to the browser.
 
 const startBtn = document.querySelector('.start')
+startBtn.addEventListener('click', () =>{
+    alert("Youve clicked me")
+})
