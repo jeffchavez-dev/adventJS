@@ -6,7 +6,7 @@
 
 
 function timer(){
-    let time = - 1;
+    let time = 5;
     if (time > 0) {
         function timer1(){
             console.log(time--)
@@ -25,3 +25,5 @@ const startBtn = document.querySelector('.start')
 startBtn.addEventListener('click', () =>{
    timer()
 })
+
+https://freshman.tech/pomodoro-timer/
