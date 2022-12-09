@@ -35,7 +35,7 @@ function pomodoro(mins) {
 }
 const startBtn = document.querySelector('.start')
 startBtn.addEventListener('click', () =>{
-   pomodoro()
+   pomodoro(60)
 })
 
 // https://freshman.tech/pomodoro-timer/
