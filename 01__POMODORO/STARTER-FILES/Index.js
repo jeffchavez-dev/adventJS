@@ -5,25 +5,37 @@
 // - Once the timer finishes, the ring should change from green to red and an alert message is passed to the browser.
 
 
-function timer(){
-    let time = 5;
-    if (time > 0) {
-        function timer1(){
-            console.log(time--)
-        }
-        const myTimer = setInterval(timer1, 1000)
-    } else if (time === 0 ) {
-        clearInterval(Timer)
-    }
-    return time
+// function timer(){
+//     let time = 5;
+//     if (time > 0) {
+//         function timer1(){
+//             console.log(time--)
+//         }
+//         const myTimer = setInterval(timer1, 1000)
+//     } else if (time === 0 ) {
+//         clearInterval(Timer)
+//     }
+//     return time
 
    
   
+// }
+let seconds = 0;
+let interval ;
+function pomodoro(mins) {
+   seconds = mins*60 || 0;     
+   interval = setInterval(function() {
+ 
+        seconds--;
+        if(!seconds){
+             clearInterval(interval); 
+             alert("🚨 It is Cool 😎. I wish you could share ");
+        }
+   },1000)
 }
-
 const startBtn = document.querySelector('.start')
 startBtn.addEventListener('click', () =>{
-   timer()
+   pomodoro()
 })
 
-https://freshman.tech/pomodoro-timer/
+// https://freshman.tech/pomodoro-timer/
